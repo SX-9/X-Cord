@@ -52,8 +52,9 @@ function SignIn() {
 
   return (
     <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
+      <h1 style="color:00e1ff;text-align:center;>
+      <button className="sign-in" onClick={signInWithGoogle}>Sign in To X-Cord</button>
+      <p>Do not violate the community guidelines or you will be banned for life!<br><a href="https://invite.sx9.repl.co>Join The Discord!</a></p>
     </>
   )
 
@@ -103,9 +104,9 @@ function ChatRoom() {
 
     <form onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="👋 Type Here!" />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <button type="submit" disabled={!formValue}Send! 🛫</button>
 
     </form>
   </>)
