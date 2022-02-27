@@ -10,13 +10,13 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  apiKey: "AIzaSyAQlkgZRh40HL8XYcE5PgMdAs1FPpczhzU",
-  authDomain: "x-cord.firebaseapp.com",
-  projectId: "x-cord",
-  storageBucket: "x-cord.appspot.com",
-  messagingSenderId: "719536504642",
-  appId: "1:719536504642:web:83921e4385d60ab80092db",
-  measurementId: "G-XP3DY2TCH9"
+ apiKey: "AIzaSyAQlkgZRh40HL8XYcE5PgMdAs1FPpczhzU",
+ authDomain: "x-cord.firebaseapp.com",
+ projectId: "x-cord",
+ storageBucket: "x-cord.appspot.com",
+ messagingSenderId: "719536504642",
+ appId: "1:719536504642:web:83921e4385d60ab80092db",
+ measurementId: "G-XP3DY2TCH9"
 })
 
 const auth = firebase.auth();
@@ -51,13 +51,13 @@ function SignIn() {
   }
 
   return (
-    <>
-      <h1 style="color:00e1ff;text-align:center;>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in To X-Cord</button>
-      <p>Do not violate the community guidelines or you will be banned for life!<br><a href="https://invite.sx9.repl.co>Join The Discord!</a></p>
-    </>
+    <div>
+      <h1 style="color:00e1ff; text-align:center;">X-Cord</h1>
+      <button className="sign-in" onClick={signInWithGoogle} >Sign in To X-Cord</button>
+      <p>Do not violate the community guidelines or you will be banned for life! </p>
+      <br /> <a href="https://invite.sx9.repl.co">Join The Discord!</a>
+    </div>
   )
-
 }
 
 function SignOut() {
@@ -106,7 +106,7 @@ function ChatRoom() {
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="👋 Type Here!" />
 
-      <button type="submit" disabled={!formValue}Send! 🛫</button>
+      <button type="submit" disabled={!formValue}> Send! 🛫</button>
 
     </form>
   </>)
