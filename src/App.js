@@ -10,7 +10,13 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  // your config
+  apiKey: "AIzaSyAQlkgZRh40HL8XYcE5PgMdAs1FPpczhzU",
+  authDomain: "x-cord.firebaseapp.com",
+  projectId: "x-cord",
+  storageBucket: "x-cord.appspot.com",
+  messagingSenderId: "719536504642",
+  appId: "1:719536504642:web:83921e4385d60ab80092db",
+  measurementId: "G-XP3DY2TCH9"
 })
 
 const auth = firebase.auth();
@@ -25,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h1>X-Cord</h1>
         <SignOut />
       </header>
 
