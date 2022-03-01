@@ -1,5 +1,5 @@
 body {
-  background-color: #282c34;
+  background-color: #002259;
 }
 
 .App {
@@ -9,7 +9,7 @@ body {
 }
 
 .App header {
-  background-color: #181717;
+  background-color: #6666ff;
   height: 10vh;
   min-height: 50px;
   color: white;
@@ -105,6 +105,7 @@ button:disabled {
   background: white;
   max-width: 400px;
   margin: 0 auto;
+  border-radius: 10%;
 }
 
 
@@ -142,7 +143,7 @@ p {
   align-self: flex-end;
 }
 .received p {
-  background: #e5e5ea;
+  background: #866bfa;
   color: black;
 }
 
